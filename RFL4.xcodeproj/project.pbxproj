@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE07C2911974AE7100F1A4BF /* TableView1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE07C2901974AE7100F1A4BF /* TableView1Controller.swift */; };
 		FE6BA869196A812D0053E823 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA868196A812D0053E823 /* AppDelegate.swift */; };
 		FE6BA86C196A812D0053E823 /* RFL4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA86A196A812D0053E823 /* RFL4.xcdatamodeld */; };
 		FE6BA86E196A812D0053E823 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA86D196A812D0053E823 /* ViewController.swift */; };
-		FE6BA871196A812D0053E823 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6BA86F196A812D0053E823 /* Main.storyboard */; };
+		FE6BA871196A812D0053E823 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE6BA86F196A812D0053E823 /* Main_iPad.storyboard */; };
 		FE6BA873196A812D0053E823 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE6BA872196A812D0053E823 /* Images.xcassets */; };
 		FE6BA87F196A812D0053E823 /* RFL4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA87E196A812D0053E823 /* RFL4Tests.swift */; };
+		FE6BA88E196BD7C80053E823 /* HttpJsonClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA889196A81680053E823 /* HttpJsonClient.swift */; };
+		FE6BA892196BDE730053E823 /* MAHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA891196BDE730053E823 /* MAHttpClient.m */; };
+		FE6BA894196E8B0D0053E823 /* RFLSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6BA893196E8B0D0053E823 /* RFLSystem.swift */; };
+		FEF0657619764155000F821F /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF0657519764155000F821F /* NSData+Base64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE07C2901974AE7100F1A4BF /* TableView1Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView1Controller.swift; sourceTree = "<group>"; };
 		FE6BA863196A812D0053E823 /* RFL4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RFL4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6BA867196A812D0053E823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6BA868196A812D0053E823 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE6BA86B196A812D0053E823 /* RFL4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RFL4.xcdatamodel; sourceTree = "<group>"; };
 		FE6BA86D196A812D0053E823 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FE6BA870196A812D0053E823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FE6BA870196A812D0053E823 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		FE6BA872196A812D0053E823 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FE6BA878196A812D0053E823 /* RFL4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RFL4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6BA87D196A812D0053E823 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE6BA87E196A812D0053E823 /* RFL4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFL4Tests.swift; sourceTree = "<group>"; };
+		FE6BA889196A81680053E823 /* HttpJsonClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpJsonClient.swift; sourceTree = "<group>"; };
+		FE6BA88B196A87D10053E823 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FE6BA88F196BDE720053E823 /* RFL4-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RFL4-Bridging-Header.h"; sourceTree = "<group>"; };
+		FE6BA890196BDE730053E823 /* MAHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAHttpClient.h; sourceTree = "<group>"; };
+		FE6BA891196BDE730053E823 /* MAHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAHttpClient.m; sourceTree = "<group>"; };
+		FE6BA893196E8B0D0053E823 /* RFLSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RFLSystem.swift; sourceTree = "<group>"; };
+		FEF0657419764155000F821F /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		FEF0657519764155000F821F /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +70,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE07C28F1974ADFA00F1A4BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE07C2901974AE7100F1A4BF /* TableView1Controller.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		FE6BA85A196A812D0053E823 = {
 			isa = PBXGroup;
 			children = (
+				FE6BA88D196A88410053E823 /* Frameworks */,
 				FE6BA865196A812D0053E823 /* RFL4 */,
 				FE6BA87B196A812D0053E823 /* RFL4Tests */,
 				FE6BA864196A812D0053E823 /* Products */,
@@ -77,9 +100,11 @@
 		FE6BA865196A812D0053E823 /* RFL4 */ = {
 			isa = PBXGroup;
 			children = (
+				FE07C28F1974ADFA00F1A4BF /* View */,
+				FE6BA888196A81550053E823 /* Library */,
 				FE6BA868196A812D0053E823 /* AppDelegate.swift */,
 				FE6BA86D196A812D0053E823 /* ViewController.swift */,
-				FE6BA86F196A812D0053E823 /* Main.storyboard */,
+				FE6BA86F196A812D0053E823 /* Main_iPad.storyboard */,
 				FE6BA872196A812D0053E823 /* Images.xcassets */,
 				FE6BA86A196A812D0053E823 /* RFL4.xcdatamodeld */,
 				FE6BA866196A812D0053E823 /* Supporting Files */,
@@ -110,6 +135,28 @@
 				FE6BA87D196A812D0053E823 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE6BA888196A81550053E823 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				FE6BA88F196BDE720053E823 /* RFL4-Bridging-Header.h */,
+				FE6BA890196BDE730053E823 /* MAHttpClient.h */,
+				FE6BA891196BDE730053E823 /* MAHttpClient.m */,
+				FEF0657419764155000F821F /* NSData+Base64.h */,
+				FEF0657519764155000F821F /* NSData+Base64.m */,
+				FE6BA889196A81680053E823 /* HttpJsonClient.swift */,
+				FE6BA893196E8B0D0053E823 /* RFLSystem.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		FE6BA88D196A88410053E823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE6BA88B196A87D10053E823 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +208,7 @@
 				TargetAttributes = {
 					FE6BA862196A812D0053E823 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = GDY56459T9;
 					};
 					FE6BA877196A812D0053E823 = {
 						CreatedOnToolsVersion = 6.0;
@@ -192,7 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE6BA871196A812D0053E823 /* Main.storyboard in Resources */,
+				FE6BA871196A812D0053E823 /* Main_iPad.storyboard in Resources */,
 				FE6BA873196A812D0053E823 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,9 +259,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE07C2911974AE7100F1A4BF /* TableView1Controller.swift in Sources */,
+				FE6BA88E196BD7C80053E823 /* HttpJsonClient.swift in Sources */,
 				FE6BA86E196A812D0053E823 /* ViewController.swift in Sources */,
 				FE6BA869196A812D0053E823 /* AppDelegate.swift in Sources */,
+				FE6BA894196E8B0D0053E823 /* RFLSystem.swift in Sources */,
+				FEF0657619764155000F821F /* NSData+Base64.m in Sources */,
 				FE6BA86C196A812D0053E823 /* RFL4.xcdatamodeld in Sources */,
+				FE6BA892196BDE730053E823 /* MAHttpClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,12 +289,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FE6BA86F196A812D0053E823 /* Main.storyboard */ = {
+		FE6BA86F196A812D0053E823 /* Main_iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FE6BA870196A812D0053E823 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,7 +334,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -318,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,9 +384,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RFL4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFL4/RFL4-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -342,9 +400,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = RFL4/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RFL4/RFL4-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -403,6 +465,7 @@
 				FE6BA884196A812E0053E823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE6BA885196A812E0053E823 /* Build configuration list for PBXNativeTarget "RFL4Tests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +474,7 @@
 				FE6BA887196A812E0053E823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

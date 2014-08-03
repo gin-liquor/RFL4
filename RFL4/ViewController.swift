@@ -10,6 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
                             
+    @IBOutlet var textView1: UITextView!
+    
+    //var req = HttpJsonClient()
+    var rfl = RFLSystem()
+    
+    @IBAction func actClear(sender: AnyObject) {
+        textView1.text = "";
+    }
+    
+    @IBAction func actTest1(sender: AnyObject) {
+        textView1.text = textView1.text + "Hello, world!\n"
+    }
+    
+    @IBAction func actTest2(sender: AnyObject) {
+    }
+    
+    @IBAction func actTest3(sender: AnyObject) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
